@@ -32,4 +32,4 @@ jobs:
 
       - name: Deploy to AWS Lambda
         run: |
-          aws lambda update-function-code --function-name=zoe --zip-file fileb://deploy.zip
+          aws lambda update-function-code --function-name=zoe_test --zip-file fileb://deploy.zip
