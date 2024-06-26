@@ -1,5 +1,5 @@
 import express from "express";
-import serverless from 'erverless-http';
+import serverless from 'serverless-http';
 
 const app = express();
 
