@@ -15,4 +15,8 @@ app.put('/users/:id', (req, res) => {
     res.send("User: " + req.params.id + " actualizado");
 });
 
+app.delete('/users/:id', (req, res) => {
+  res.send("User: " + req.params.id + " eliminado");
+});
+
 export const handler = serverless(app);
