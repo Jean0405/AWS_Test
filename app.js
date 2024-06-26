@@ -1,10 +1,10 @@
 import express from "express";
+import serverless from 'erverless-http';
 
 const app = express();
+
 app.get('/', (req, res) => {
-    res.send('¡Hola mundo!');
+  res.send('¡Hola mundo <3!');
 });
 
-app.listen(3000, () => {
-    console.log('Servidor iniciado en http://localhost:3000');
-});
+export const handler = serverless(app);
