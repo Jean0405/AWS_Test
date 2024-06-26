@@ -8,11 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/users/:id', (req, res) => {
-    if (req.params.id === 1) {
-        res.send('Keanon Jeanpierre Angarita Olarte');
-    }else{
-        res.send('No existe');
-    }
+    res.send(req.params.id);
 });
 
 export const handler = serverless(app);
