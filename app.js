@@ -8,7 +8,11 @@ app.get('/', (req, res) => {
 });
 
 app.post('/users/:id', (req, res) => {
-    res.send(req.params.id);
+    res.send("User: " + req.params.id + " agregado");
+});
+
+app.put('/users/:id', (req, res) => {
+    res.send("User: " + req.params.id + " actualizado");
 });
 
 export const handler = serverless(app);
